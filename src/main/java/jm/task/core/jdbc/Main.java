@@ -25,5 +25,9 @@ public class Main {
        for (User user : users) {
            System.out.println(user);
         }
+
+       userService.getAllUsers().stream().forEach(System.out::println);
+//       userService.removeUserById(1);
+//       userService.dropUsersTable();
     }
     }
